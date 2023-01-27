@@ -12,11 +12,10 @@ AccelStepper myStepper(motorInterfaceType, stepPin, dirPin);
 void setup() {
   // Устанавливаем максимальную скорость, коэффициент ускорения,
   // начальную скорость и целевую позицию
-  myStepper.setMaxSpeed(800);
-  myStepper.setAcceleration(50);
-  myStepper.setSpeed(100);
+  myStepper.setMaxSpeed(1800);
+  myStepper.setAcceleration(200);
+  myStepper.setSpeed(200);
   myStepper.moveTo(10000000);
-  
 }
 void loop() {
 
